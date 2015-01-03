@@ -1,0 +1,104 @@
+.font-hei {
+	font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+.font-song {
+	font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", serif;
+}
+
+progress {
+	width: 100%;
+	height: 2rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	background-color: #eee;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-bar {
+	background-color: #eee;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-value {
+	background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0, 0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, #5CB85C, #70D016);
+	border-radius: 2px;
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	-webkit-animation: animate-stripes 5s linear infinite;
+	animation: animate-stripes 5s linear infinite;
+}
+progress::-moz-progress-bar {
+	background-image: -moz-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0, 0, 0, .1) 66%, transparent 66%), -moz-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -moz-linear-gradient(left, #5CB85C, #70D016);
+	border-radius: 2px;
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	animation: animate-stripes 5s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+	100% {
+		background-position: -100px 0px;
+	}
+}
+@keyframes animate-stripes {
+	100% {
+		background-position: -100px 0px;
+	}
+}
+
+div#register{
+	div.ui-content{
+		text-align: center;
+		img#bitcoin{
+			width: 50%;
+		}
+		p#slogan{
+			font-size: 1.5rem;
+		}
+	}
+}
+div#list{
+	div.ui-content{
+		text-align: center;
+		img#bitcoin{
+			width: 50%;
+		}
+	}
+}
+div#birthday{
+	div.ui-content{
+		p{
+			text-align: center;
+			.tip{
+				font-size: 1.2rem;
+			}
+		}
+		ul.mylist{
+			li{
+				text-align: center;
+				.title{
+					background-color: #E9E9E9;
+				}
+			}
+		}
+	}
+}
+
+div#name{
+	div.ui-content{
+		p{
+			text-align: center;
+			.tip{
+				font-size: 1.2rem;
+			}
+		}
+		ul.mylist{
+			li{
+				text-align: center;
+				.title{
+					background-color: #E9E9E9;
+				}
+			}
+		}
+	}
+}

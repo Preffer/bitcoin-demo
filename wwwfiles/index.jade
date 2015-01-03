@@ -1,0 +1,73 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+		meta(name="renderer" content="webkit")
+		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+		title bitcoin-demo
+		link(rel="stylesheet" href="bower_components/jquery-mobile/jquery.mobile-1.4.4.min.css")
+		link(rel="stylesheet" href="css/jquery.mobile.datepicker.css")
+		link(rel="stylesheet" href="css/style.css")
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="bower_components/jquery-ui/jquery-ui.min.js")
+		script(src="bower_components/jquery-mobile/jquery.mobile-1.4.4.min.js")
+		script(src="js/jquery.mobile.datepicker.js")
+		script(src="js/socket.io-1.2.0.js")
+		script(src="js/script.js")
+
+	body.font-hei
+		div(data-role="page" id="register" class="ui-page")
+			div(data-role="header")
+				h1 Bitcoin Experiment
+
+			div.ui-content(role="main")
+				img#bitcoin(src="img/bitcoin.png")
+				p#slogan Let's do the magic Bitcoin Experiment together!
+
+				form
+					input#nickname(name="nickname" placeholder="  Nickname" type="text")
+					div#registerButton(class="ui-shadow ui-btn ui-corner-all ui-btn-b") Register
+
+		div(data-role="page" id="list")
+			div(data-role="header")
+				h1 Experiment List
+			
+			div.ui-content(role="main")
+				img#bitcoin(src="img/bitcoin.png")
+				ul(data-role='listview' data-inset='true')
+					li
+						a(href='#birthday') Birthday Hit
+					li
+						a(href='#name') Name Hit
+				
+		div(data-role="page" id="birthday")
+			div(data-role="header")
+				a(href="#list" class="ui-btn ui-shadow ui-btn-icon-left ui-icon-bullets") List
+				h1 Birthday Hit
+
+			div.ui-content(role="main")
+				p.tip 设创的39位同学当中，我能想起多少同学的生日呢？
+				progress(value="0" max="39")
+				p.textProgress 我想起0人 / 全班想起0人 / 共39人
+				input#datepicker(type="text" data-role="date" data-inline="true")
+				div.submit(class="ui-shadow ui-btn ui-corner-all ui-btn-b") 提交
+				
+				ul.mylist(data-role='listview' data-inset='true')
+					li.title 我记得的同学
+		
+		div(data-role="page" id="name")
+			div(data-role="header")
+				a(href="#list" class="ui-btn ui-shadow ui-btn-icon-left ui-icon-bullets") List
+				h1 Name Hit
+
+			div.ui-content(role="main")
+				p.tip 浙江大学12级5753位同学当中，你认识多少呢？
+				progress(value="0" max="5753")
+				p.textProgress 我认识0人 / 全班认识0人 / 共5753人
+				input#name(type="text")
+				div.submit(class="ui-shadow ui-btn ui-corner-all ui-btn-b") 提交
+
+				ul.mylist(data-role='listview' data-inset='true')
+					li.title 我认识的同学
+				

@@ -1,0 +1,10 @@
+{
+	"name": "bitcoin-demo",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"express": "x",
+		"socket.io": "x",
+		"mysql": "x"
+	}
+}
